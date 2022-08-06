@@ -986,6 +986,10 @@ body{
   display: none;
 }
 
+.about__quality--inner-img-3{
+  display: none;
+}
+
 .headquarters{
   padding-top: 168px;
 }
@@ -1124,6 +1128,10 @@ body{
   .about__quality--inner-img-2{
     display: block;
     border-radius: 8px;
+  }
+  
+  .about__quality--inner-img-3{
+    display: none;
   }
   
   .headquarters{
