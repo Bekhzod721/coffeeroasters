@@ -360,7 +360,7 @@ body{
 
 .footer{
   padding-top: 200px;
-  padding-bottom: 135px;
+  padding-bottom: 80px;
 
 }
 
@@ -609,6 +609,10 @@ body{
       line-height: 25px;
       width: 223px;
     }
+
+    .footer{
+      padding-bottom: 80px;
+    }
     
     .footer__inner{
       display: flex;
@@ -644,7 +648,7 @@ body{
 
   .site__nav--hamburger{
     display: block;
-  }
+  } 
 
   .hero__inner{
     background: url(../img/mobile-hero-bg.png);
@@ -853,6 +857,7 @@ body{
     margin-top: 0px;
     margin-bottom: 0px;
     margin: 0px 24px 0px 24px;
+    padding-left:50px;
     width: 327px;
     height: 346px;
   }
@@ -865,7 +870,7 @@ body{
 
   .footer__inner--item{
     margin: 0px 0px 24px 0px;
-    padding-left: 0px;
+    padding-left: 30px;
   }
 
   .footer__inner--social-list{
@@ -910,6 +915,14 @@ body{
 
 .about__intro--inner-img{
   border-radius: 8px;
+}
+
+.about__intro--inner-img-2{
+  display: none;
+}
+
+.about__intro--inner-img-3{
+  display: none;
 }
 
 .about__intro--content-title{
@@ -969,6 +982,10 @@ body{
   border-radius: 8px;
 }
 
+.about__quality--inner-img-2{
+  display: none;
+}
+
 .headquarters{
   padding-top: 168px;
 }
@@ -1016,7 +1033,275 @@ body{
   margin-top: 8px;
 }
 
+/* About page responsive design for TABLET */
 
+@media (max-width: 768px){
+  .container{
+    width: 768px;
+    margin: 0;
+    padding: 0;
+  }
+
+ .about__hero--inner{
+    background-image: url(../img/about-hero-tablet.png);
+    width: 689px ;
+    height: 400px ;
+  }
+
+  .about__hero--inner-title{
+    font-size: 32px;
+    line-height: 40px;
+  }
+  
+  .about__hero--inner-text{
+    font-size: 15px;
+    line-height: 25px;
+    width: 400px;
+  }
+  
+  .about__intro--inner{
+    margin: 0 40px 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .about__intro--inner-img{
+    display: none;
+  }
+  
+  .about__intro--inner-img-2{
+    display: block;
+    border-radius: 8px;
+  }
+
+  .about__intro--inner-img-3{
+    display: none;
+  }
+  
+  .about__intro--content-title{
+    font-size: 32px;
+    line-height: 48px;
+  }
+  
+  .about__intro--content-text{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    width: 340px; 
+  }
+  
+  .about__quality--inner{
+    margin-left: 40px;
+    padding: 0px 60px 67px 60px;
+    display: flex; 
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 488px;
+    width: 688px;
+  }
+  
+  .about__quality--content-title{
+    text-align: center;
+    font-size: 32px;
+    line-height: 48px;
+    margin-top: 64px;
+    margin-bottom: 24px;
+  }
+  
+  .about__quality--content-text{
+    text-align: center;
+    font-size: 15px;
+    line-height: 25px;
+    width: 540px;
+    opacity: 0.8;
+  }
+  
+  .about__quality--inner-img{
+    display: none;
+  }
+
+  .about__quality--inner-img-2{
+    display: block;
+    border-radius: 8px;
+  }
+  
+  .headquarters{
+    padding-top: 168px;
+  }
+  
+  .headquarters__inner{
+    margin-left: 40px;
+  }
+  
+  .headquarters__inner--list{
+    display: flex;
+    align-items: center;
+  }
+  
+  .headquarters__inner--item{
+    width: 223px;
+  }
+
+  .headquarters__inner--item + .headquarters__inner--item{
+    padding-left: 9px;
+  }
+  
+  .headquarters__inner--item-title{
+    margin-top: 48px;
+    margin-bottom: 21px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+
+
+@media (max-width:375px){
+  .container{
+    width: 375px;
+    margin: 0 auto;
+    padding: 0px;
+  }
+  
+  .about__hero--inner{
+    background-image: url(../img/about-hero-mobile.png);
+    width: 327px;
+    height: 400px;
+  }
+  
+  .about__hero--inner-title{
+    font-size: 28px;
+    line-height: 28px;
+  }
+  
+  .about__hero--inner-text{
+    width: 279px;
+    font-size: 15px;
+    line-height: 25px;
+  }
+  
+  .about__intro--inner{
+    margin: 0 24px 0 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .about__intro--inner-img{
+    border-radius: 8px;
+  }
+  
+  .about__intro--inner-img-2{
+    display: none;
+  }
+
+  .about__intro--inner-img-3{
+    display: block;
+    border-radius: 8px;
+  }
+
+  .about__intro--content-title{
+    text-align: center;
+    font-size: 32px;
+    line-height: 48px;
+  }
+  
+  .about__intro--content-text{
+    font-size: 15px;
+    line-height: 25px;
+    width: 327px; 
+    text-align: center;
+  }
+  
+  .about__quality--inner{
+    padding: 0px 24px 88px 24px;
+    margin-top: 120px;
+    margin-left: 24px;
+    margin-right: 24px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    height: 587px;
+    width: 327px;
+  
+  }
+  
+  .about__quality--content-title{
+    font-size: 28px;
+    line-height: 28px;
+    margin-top: 110px;
+  }
+  
+  .about__quality--content-text{
+    font-size: 15px;
+    line-height: 25px;
+    width: 279px;
+  }
+  
+  .about__quality--inner-img{
+    display: none;
+  }
+  
+  .about__quality--inner-img-2{
+    display: none;
+  }
+
+  .about__quality--inner-img-3{
+    display: block;
+    border-radius: 8px;
+  }
+
+  .headquarters{
+    padding-top: 168px;
+  }
+  
+  .headquarters__inner{
+    margin-left: 24px;
+  }
+  
+  .headquarters__inner--title{
+    text-align: center;
+  }
+  
+  .headquarters__inner--list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .headquarters__inner--item + .headquarters__inner--item{
+    padding-left: 0px;
+    margin-top: 80px;
+  }
+
+  .headquarters__inner--item{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .headquarters__inner--item-title{
+    width: 327px;
+    text-align: center;
+    font-size: 28px;
+  }
+  
+  .headquarters__inner--item-text{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333D4B;
+  }
+  
+  .headquarters__inner--item-text +.headquarters__inner--item-text{
+    margin-top: 8px;
+  }
+  
+}
 
 
 
